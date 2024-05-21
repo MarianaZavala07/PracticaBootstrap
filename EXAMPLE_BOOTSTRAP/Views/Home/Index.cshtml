@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Lista de Alumnos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lista de Alumnos</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="row">
+ <div class="col-2">
+    Matricula
+ </div>
+  <div class="col-5">
+    Nombre
+ </div>
+  <div class="col-3">
+    Carrera
+ </div>
+ <div class="col-1">
+    Edad
+ </div>
+ <div class="col-1">
+    Sexo
+ </div>
+ <div class="col-2">
+    44567
+ </div>
+  <div class="col-5">
+    Andrea Alvarez Torres
+ </div>
+  <div class="col-3">
+    Mercadotecnia
+ </div>
+ <div class="col-1">
+    18
+ </div>
+ <div class="col-1">
+    F
+ </div>
+ <div class="col-2">
+    .
+ </div>
+  <div class="col-5">
+    .
+ </div>
+  <div class="col-3">
+    .
+ </div>
+ <div class="col-1">
+    .
+ </div>
+ <div class="col-1">
+    .
+ </div>
+  <div class="col-2">
+    .
+ </div>
+  <div class="col-5">
+    .
+ </div>
+  <div class="col-3">
+    .
+ </div>
+ <div class="col-1">
+    .
+ </div>
+ <div class="col-1">
+    .
+ </div>
+</div>
+ 
+  <button onclick="mosstrarAletraEnvio()"mostrar Alerta envio"></button>
+
+<div>
+    ENVIO DE DATOS
+</div>
+
+
+<div id="contenedor-alertas">
+
+</div>
+
+@section Scripts{
+<script>
+    function mosstrarAletraEnvio(){
+    mostrarAlerta(`La informacion se envio con exito`, `success`);
+    }
+    function mostrarAlerta(mensaje, tipo){
+        const alerta = document.createElement("div");
+        alerta.innerHTML =(`<div class="alert alert-${tipo}" role ="alert">
+                    ${mensaje}
+ </div>;`)
+ const contenedorAlertas = document.getElementById(`contenedor-alertas`);
+ contenedorAlertas.append(alerta)
+    }
+</script>
+
+}
+
+
+
+

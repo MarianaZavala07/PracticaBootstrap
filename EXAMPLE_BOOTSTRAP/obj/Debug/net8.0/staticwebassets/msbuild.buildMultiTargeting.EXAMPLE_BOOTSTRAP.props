@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EXAMPLE_BOOTSTRAP.props" />
+</Project>
